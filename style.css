@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "main aside";
+
+    grid-template-columns: 1fr 1fr;
+}
+main {
+    background-color: var(--background);
+    grid-area: main;
+}
+.logo{
+    position: relative;
+    left:30px;
+    top:30px;
+}
+.quadrado{
+    background: var(--form-background);
+    width: 410px;
+    height: 410px;
+    border-radius: 4px;
+    position: relative;
+    top: 110px;
+    left: 75px;   
+}
+
+aside{
+    grid-area: aside;
+    background-image:url(./images/side-image-2x.jpg);
+    background-size: cover;
+}
+.textos{
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    left: 80px;
+    top: 30px;
+}
+#login{
+    color: var(--text-title);
+    padding-left: 10px;
+}
+#info{
+    color: var(--text-base);
+    margin: 0;
+    position: relative;
+    left: 80px;
+    top: 15px
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+.logs{
+    position: relative;
+    left: 80px;
+    color: var(--text-base);
+    margin: 0;
+    padding: 0;
+}
+#email{
+    position: relative;
+    left: 80px;
+    width: 260px;
+    height: 30px;
+    background-color: var(--form-background);
+    border: solid 2px #afb6c2;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#senha{
+    position: relative;
+    left: 80px;
+    width: 260px;
+    height: 30px;
+    background-color: var(--form-background);
+    border: solid 2px #afb6c2;
+    border-radius: 4px;
+}
+#primeiro{
+    margin-top: 40px;
+    margin-bottom: 6px;
+}
+#segundo{
+    margin-bottom: 6px;
+}
+
+#checkbox{
+    position: relative;
+    left: 80px;
+    top: 10px;
+}
+
+h5#lembre{
+    position: relative;
+    left: 100px;
+    color: var(--text-base);
+    bottom: 31px;
+}
+
+#esqueci{
+    color: var(--primary-color);
+    position: relative;
+    bottom: 68px;
+    left: 220px;
+}
+#botao{
+    color: #24221f;
+    background-color: #ffc632;
+    border: none;
+    width: 270px;
+    height: 45px;
+    border-radius: 3px;
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+}
+#registrar{
+    color: var(--primary-color);
+    position: relative;
+    left: 115px;
+    bottom: 90px;
+}
+input, select{
+    color: white;
+}
